@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Jhonmetro</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin - Jhonmetro</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="admin-panel" style="display: none;">
+            <h2>Adicionar Nova Emoção</h2>
+            <form id="upload-form">
+                <input type="text" id="image" placeholder="Nome da imagem (ex: happy.png)" required>
+                <select id="emotion" required>
+                    <option value="">Selecione uma emoção</option>
+                    <option value="😡 Furioso">😡 Furioso</option>
+                    <option value="😊 Feliz">😊 Feliz</option>
+                    <option value="🥰 Apaixonado">🥰 Apaixonado</option>
+                    <option value="🤔 Precisamos conversar">🤔 Precisamos conversar</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
